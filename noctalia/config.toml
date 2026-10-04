@@ -1,0 +1,95 @@
+# Owned by peter - declarative base for Noctalia v5
+# GUI changes are written to ~/.local/state/noctalia/settings.toml and win over this file.
+
+[storage]
+key_source = "file"
+key_file = "/home/peter/.local/share/noctalia/storage.key"
+
+[theme]
+mode = "dark"
+
+[lockscreen]
+enabled = true
+lock_before_suspend = true
+fingerprint = true
+allow_empty_password = false
+blurred_desktop = true
+blur_intensity = 0.65
+tint_intensity = 0.25
+wallpaper = ""
+monitors = []
+
+[shell]
+polkit_agent = true
+time_format = "{:%H:%M}"
+date_format = "%A, %x"
+
+[shell.screenshot]
+save_to_file = true
+directory = "~/Imágenes/Screenshots"
+copy_to_clipboard = true
+freeze_screen = true
+show_cursor = false
+annotate = false
+
+[bar]
+order = ["default"]
+
+[bar.default]
+position = "top"
+enabled = true
+reserve_space = true
+thickness = 34
+background_opacity = 0.9
+start = ["launcher", "workspaces", "taskbar"]
+center = ["clock"]
+end = ["media", "tray", "notifications", "clipboard", "network", "bluetooth", "volume", "brightness", "battery", "control-center", "session"]
+
+[widget.media]
+max_length = 180
+min_length = 80
+hide_artist = true
+title_scroll = "on_hover"
+hide_when_no_media = true
+
+[widget.taskbar]
+pinned = ["zen", "kitty", "thunar", "codium", "obsidian"]
+pinned_opacity = 0.5
+icon_scale = 1.0
+item_spacing = 4
+group_by_workspace = false
+show_all_outputs = false
+only_active_workspace = false
+show_active_indicator = true
+active_indicator_color = "primary"
+
+[dock]
+enabled = true
+position = "bottom"
+active_monitor_only = false
+icon_size = 48
+main_axis_padding = 16
+cross_axis_padding = 8
+item_spacing = 6
+background_opacity = 0.88
+border = "outline"
+border_width = 0.0
+shadow = true
+radius = 16
+margin_edge = 8
+show_running = true
+auto_hide = false
+smart_auto_hide = true
+reserve_space = false
+layer = "overlay"
+active_scale = 1.0
+inactive_scale = 0.85
+magnification = true
+magnification_scale = 1.45
+active_opacity = 1.0
+inactive_opacity = 0.85
+show_instance_count = true
+show_dots = false
+launcher_position = "start"
+launcher_icon = "grid-dots"
+pinned = ["zen", "kitty", "thunar", "codium", "obsidian"]

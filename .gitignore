@@ -1,0 +1,11 @@
+# Secrets and local runtime data
+**/.env
+**/.env.*
+!**/.env.example
+**/storage.key
+**/*.enc
+
+# Runtime and generated files
+**/cache/
+**/logs/
+**/*.log
