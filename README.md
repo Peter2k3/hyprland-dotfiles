@@ -11,6 +11,8 @@ Public backup of a personal Hyprland setup on Debian 13.
 
 The repository intentionally excludes credentials, encryption keys, clipboard entries and runtime data. Review paths and hardware-specific settings before reusing it on another machine.
 
+Workspace IDs are global in Hyprland, but the included navigation binds treat number keys and previous/next navigation as slots on the focused monitor. Adjust `workspaces.conf` and `SwitchMonitorWorkspace.sh` when changing monitor assignments.
+
 ## Restore
 
 From the repository root, copy the relevant files into the matching locations under `~/.config` and `~/.local/state`.
